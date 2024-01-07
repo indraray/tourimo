@@ -1,6 +1,6 @@
 .Home_description {
    height: 100%;
-   background-image: url("/background.jpg");
+   background-image: url("/public/background.jpg");
    background-size: cover;
    background-position: 0 -80px;
    text-align: center;
@@ -32,7 +32,7 @@
 }
 
 .home_details {
-   background-image: url("/home_bottom.jpg");
+   background-image: url("/public/home_bottom.jpg");
    background-size: cover;
    height: 85rem;
 
