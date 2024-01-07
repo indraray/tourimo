@@ -1,0 +1,62 @@
+.agency{
+   color: antiquewhite;
+   
+   .agency_contact{
+      display: flex;
+
+      .image_div{
+         width: 55%;
+         margin-top: 1rem;
+         height: 26rem;
+         background-image: url("/nakkati.jpg");
+         background-size: cover;
+         
+      }
+      .details_div{
+         max-width: 600px;
+         position: relative;
+         padding: 2rem 1rem;
+         right: 2.5rem;
+
+         .places{
+            padding: 4px;
+            margin-bottom: 4px;
+         }
+         #nakkati{
+            background-color: rgb(252, 230, 106);
+            color: rgb(16, 15, 15);
+         }
+
+         p{
+            margin: 0;
+         }
+  
+         .Heading_title{
+            font-size: 1.2rem;
+            padding-bottom: 3px;
+         }
+         
+         
+         .place_detail{
+            font-size: 1.1rem;
+         }
+         .view_route{
+            font-size: 1rem;
+            cursor: pointer;
+         }
+      }
+      button{
+         align-items: center;
+      }
+      
+      .book_tour{
+         cursor: pointer;
+         margin: 1rem;
+         align-items: center;
+         padding: 10px;
+         background-color: transparent;
+         color: wheat;
+         border: 2px solid gold;
+      }
+   }
+}
