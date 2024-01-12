@@ -6,7 +6,9 @@ export default function Agency() {
     <div className='agency'>
       <Heading name='TOURS' first_name="TOURS OF" second_name="OUR AGENCY" />
       <div className="agency_contact">
-        <div className="image_div"></div>
+        <div className="image_div" style={{
+                  backgroundImage: `url("https://res.cloudinary.com/dcczxntp1/image/upload/t_Banner 16:9/v1704643824/nakkati_dmkj59.jpg")`
+                }}></div>
         <div className="details_div">
           <div className="places">
             <p className='Heading_title'>GREEN DAY 1</p>

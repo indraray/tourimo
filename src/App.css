@@ -1,11 +1,39 @@
-*{
-   font-family: Galdeano;
+* {
+  font-family: Galdeano;
+  /* color: #012A0A; */
+  /* color: #004B39; */
+  /* color: #006D71; */
+  /* color: #008DAE; */
+  /* color: #4AABE6; */
+  /* color: #A9C4FF; */
 }
-.device_view{
-   background-color: rgb(0, 23, 0);
-   .device_content{
-      width: 90%;
-      margin: auto;
-      
-   }
+
+.device_view {
+  background-color: #012A0A;
+  background-size: cover;
+
+  .device_content {
+    width: 90%;
+    margin: auto;
+
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #006D71;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A9C4FF
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  #008DAE;
 }

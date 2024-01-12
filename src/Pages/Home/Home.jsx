@@ -7,7 +7,9 @@ import Heading from '../../Components/Heading/Heading'
 export default function Home() {
   return (
     <>
-      <div className='Home_description'>
+      <div className='Home_description' style={{
+                  backgroundImage: `url("https://res.cloudinary.com/dcczxntp1/image/upload/v1704643915/background_aafwdo.jpg")`
+                }}>
         <div>
           <p className='title_name'>LET US PLAN YOU A PERFECT</p>
           <p className='place_name'>BONGAIGAON LOCALE <br /> TRIP</p>
@@ -17,7 +19,9 @@ export default function Home() {
 
       </div>
 
-      <div className="home_details">
+      <div className="home_details"  style={{
+                  backgroundImage: `url("https://res.cloudinary.com/dcczxntp1/image/upload/v1704643621/home_bottom_dxclec.jpg")`
+                }}>
         <div className="home_details_color_up">
           <Heading name="REASON" first_name="WHY VISIT" second_name="BONGAIGAON" />
 
@@ -45,9 +49,15 @@ export default function Home() {
 
             <div className="div13">
               <div className="image_wrapper">
-                <div className="div_img1"></div>
-                <div className="div_img2"></div>
-                <div className="div_img3"></div>
+                <div className="div_img1" style={{
+                  backgroundImage: `url("https://res.cloudinary.com/dcczxntp1/image/upload/t_Banner 16:9/v1704643821/Gees-Golden-Langur_ll1buc.jpg")`
+                }}></div>
+                <div className="div_img2" style={{
+                  backgroundImage: `url("https://res.cloudinary.com/dcczxntp1/image/upload/v1704643321/brahmaputra_drnxe3.jpg")`
+                }}></div>
+                <div className="div_img3" style={{
+                  backgroundImage: `url("https://res.cloudinary.com/dcczxntp1/image/upload/t_Banner 16:9/v1704643820/manas-national-park-india_edkt6i.jpg")`
+                }}></div>
               </div>
             </div>
           </div>

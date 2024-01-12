@@ -8,7 +8,6 @@
          width: 55%;
          margin-top: 1rem;
          height: 26rem;
-         background-image: url("../../Assets/nakkati.jpg");
          background-size: cover;
          
       }
@@ -16,7 +15,6 @@
          max-width: 600px;
          position: relative;
          padding: 2rem 1rem;
-         right: 2.5rem;
 
          .places{
             padding: 4px;

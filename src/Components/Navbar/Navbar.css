@@ -2,7 +2,7 @@
 
 .Navbar_div {
    color: white;
-   background: rgba(110, 110, 110, 0.15);
+   background: #003126;
    display: flex;
 
    .title_name {
@@ -20,9 +20,17 @@
       padding: 1.5rem 0;
       text-align: center;
       margin-left: auto;
+      
+      
+      a{
+         user-select: none; 
+         color: white;
+         text-decoration: none; 
+       } 
 
       ul {
          margin: 0;
+         
       }
 
       li {
@@ -43,6 +51,7 @@
          cursor: pointer;
          padding-right: 1rem;
          float: right;
+         color: azure;
       }
    }
 
