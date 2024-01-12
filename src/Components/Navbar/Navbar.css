@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:wght@600;700&family=Rubik+Doodle+Shadow&family=Titillium+Web:wght@300&display=swap');
+
+.Navbar_div {
+   color: white;
+   background: #003126;
+   display: flex;
+
+   .title_name {
+      padding: 1.5rem 2rem;
+      cursor: pointer;
+
+      p {
+         margin: 0;
+         font-family: 'Rubik Doodle Shadow', system-ui;
+         font-size: 1.2rem;
+      }
+   }
+
+   .nav_links {
+      padding: 1.5rem 0;
+      text-align: center;
+      margin-left: auto;
+      
+      
+      a{
+         user-select: none; 
+         color: white;
+         text-decoration: none; 
+       } 
+
+      ul {
+         margin: 0;
+         
+      }
+
+      li {
+         padding: 1rem;
+         display: inline;
+         list-style: none;
+         cursor: pointer;
+      }
+   }
+
+   .nav_media {
+      padding: 1.5rem 2rem;
+      position: relative;
+      right: 0;
+      margin-left: auto;
+
+      .material-symbols-outlined {
+         cursor: pointer;
+         padding-right: 1rem;
+         float: right;
+         color: azure;
+      }
+   }
+
+}

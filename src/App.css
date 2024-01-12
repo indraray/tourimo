@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+* {
+  font-family: Galdeano;
+  /* color: #012A0A; */
+  /* color: #004B39; */
+  /* color: #006D71; */
+  /* color: #008DAE; */
+  /* color: #4AABE6; */
+  /* color: #A9C4FF; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.device_view {
+  background-color: #012A0A;
+  background-size: cover;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .device_content {
+    width: 90%;
+    margin: auto;
+
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar {
+  width: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #006D71;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A9C4FF
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  #008DAE;
 }
