@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 import './LoginForm.css';
 
 
@@ -12,7 +12,7 @@ import './LoginForm.css';
   
     useEffect(() => {
       checkType();
-    }, []); // Added an empty dependency array
+    }, []); 
   
     const checkType = () => {
       if (type === 'Register') {
