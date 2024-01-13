@@ -11,15 +11,16 @@ import './LoginForm.css';
     const [regis, setRegis] = useState('none');
   
     
-    const checkType = () => {
-      if (type === 'Register') {
-        setRegis('block');
-      }
-    };
+    ;
     
     useEffect(() => {
+      const checkType = () => {
+        if (type === 'Register') {
+          setRegis('block');
+        }
+      }
       checkType();
-    },[type]);
+    });
 
     const submitFunc= ()=>{
       const data={
@@ -72,7 +73,7 @@ import './LoginForm.css';
                 <button className='submitBtn' onClick={submitFunc}>{type}</button>
                 <div>
 
-                  <a>Forgot Password?</a>
+                  <a href='/'>Forgot Password?</a>
                   {
                     type === "Register" ? <Link to='/login' className='hotLink'><p>Login</p></Link> :
                       <Link to='/register' className='hotLink'><p>Register</p></Link>
