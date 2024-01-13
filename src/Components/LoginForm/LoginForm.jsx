@@ -1,24 +1,35 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { Link } from 'react-router-dom'; 
 import './LoginForm.css';
 
 
   const LoginForm = ({ type }) => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
-    const [phone, setPhone] = useState('');
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [pass, setPass] = useState("");
+    const [phone, setPhone] = useState("");
     const [regis, setRegis] = useState('none');
   
-    useEffect(() => {
-      checkType();
-    }, []); 
-  
+    
     const checkType = () => {
       if (type === 'Register') {
         setRegis('block');
       }
     };
+    
+    useEffect(() => {
+      checkType();
+    },[type]);
+
+    const submitFunc= ()=>{
+      const data={
+        name:name,
+        email:email,
+        pass:pass,
+        phone:phone
+      }
+      console.log(data);
+    }
 
 
 
@@ -38,27 +49,27 @@ import './LoginForm.css';
 
               <div className="div_input" style={{ display: regis }}>
                 <ion-icon name="person-outline"></ion-icon>
-                <input type="text" name="" id="" placeholder='Name' onChange={(e) => setName(e.target.value)} />
+                <input type="text" name="" value={name} id="name" placeholder='Name' onChange={(e) => setName(e.target.value)} />
               </div>
 
               <div className="div_input" style={{ display: regis }}>
                 <ion-icon name="call-outline"></ion-icon>
-                <input type="text" name="" id="" placeholder='Phone No' onChange={(e) => setPhone(e.target.value)}/>
+                <input type="text" name=""  value={phone} id="phone" placeholder='Phone No' onChange={(e) => setPhone(e.target.value)}/>
               </div>
 
               <div className="div_input">
                 <ion-icon name="mail-outline"></ion-icon>
-                <input type="email" name="" id="" placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
+                <input type="email" name="" value={email} id="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
               </div>
 
               <div className="div_input">
                 <ion-icon name="lock-open-outline"></ion-icon>
-                <input type="password" name="" id="" placeholder='Password' onChange={(e) => setPass(e.target.value)}/>
+                <input type="password" value={pass} name="" id="pass" placeholder='Password' onChange={(e) => setPass(e.target.value)}/>
               </div>
 
               <div className="btn">
 
-                <button className='submitBtn'>{type}</button>
+                <button className='submitBtn' onClick={submitFunc}>{type}</button>
                 <div>
 
                   <a>Forgot Password?</a>
