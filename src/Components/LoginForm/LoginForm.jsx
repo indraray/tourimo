@@ -1,6 +1,8 @@
 import React, { useState , useEffect} from 'react';
 import { Link } from 'react-router-dom'; 
 import './LoginForm.css';
+// import axios from 'axios'
+
 
 
   const LoginForm = ({ type }) => {
@@ -10,8 +12,7 @@ import './LoginForm.css';
     const [phone, setPhone] = useState("");
     const [regis, setRegis] = useState('none');
   
-    
-    ;
+
     
     useEffect(() => {
       const checkType = () => {
@@ -22,16 +23,24 @@ import './LoginForm.css';
       checkType();
     });
 
-    const submitFunc= ()=>{
-      const data={
-        name:name,
-        email:email,
-        pass:pass,
-        phone:phone
-      }
-      console.log(data);
-    }
+   
 
+    const submitFunc = async(e) => {
+      
+      e.preventDefault();
+      const data = {name, email, pass, phone}
+      const response = await fetch('http://localhost:3000/register',{
+        method:'POST',
+        body: JSON.stringify(data), 
+        headers:{
+          'content-Type':'application/json'
+        }
+      })
+      const json = await response.json()
+
+      console.log(json)
+
+    };
 
 
   return (

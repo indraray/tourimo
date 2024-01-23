@@ -1,0 +1,26 @@
+/* ResponsiveGallery.css */
+.gallery-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: -15px; /* Negative margin to offset padding in gallery-item */
+ }
+ 
+ .gallery-item {
+   flex: 1 1 300px; /* Responsive flexbox item with minimum width */
+   margin: 15px; /* Spacing between gallery items */
+   overflow: hidden;
+ }
+ 
+ .image_gallery {
+   width: 100%; /* Make images fill their container */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 8px; /* Add rounded corners to images */
+   
+ }
+ .image_gallery:hover{
+   transform: rotate(0.1deg) scale(1.03);
+   transition: 1s ease-in;
+   /* translate: scale(1.1); */
+ }
+ 

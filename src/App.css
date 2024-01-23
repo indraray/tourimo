@@ -1,19 +1,13 @@
 * {
   font-family: Galdeano;
-  /* color: #012A0A; */
-  /* color: #004B39; */
-  /* color: #006D71; */
-  /* color: #008DAE; */
-  /* color: #4AABE6; */
-  /* color: #A9C4FF; */
 }
 
 .device_view {
-  background-color: #012A0A;
+  background-color:  #A9C4FF;
   background-size: cover;
 
   .device_content {
-    width: 90%;
+    padding: 0.1rem 0.5rem;
     margin: auto;
 
   }

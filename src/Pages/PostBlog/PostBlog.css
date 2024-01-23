@@ -1,0 +1,18 @@
+.postblog{
+   background-color: rgb(22, 48, 0);
+   display: grid;
+   justify-content: center;
+   .Delete_div, .add_post, input{
+      margin: 2px;
+      padding: 10px;
+   }
+   .preview{
+      background-color: rgb(65, 65, 65);
+      border-radius: 10px;
+      box-shadow: 2px solid grey;
+      p, li, ul{
+         margin: 0;
+         padding: 2px;
+      }
+   }
+}

@@ -2,8 +2,9 @@
 
 .Navbar_div {
    color: white;
-   background: #003126;
+   background: #012A0A;
    display: flex;
+   margin-bottom: 1px;
 
    .title_name {
       padding: 1.5rem 2rem;
@@ -17,7 +18,7 @@
    }
 
    .nav_links {
-      padding: 1.5rem 0;
+      padding: 1.5rem;
       text-align: center;
       margin-left: auto;
       
@@ -30,6 +31,7 @@
 
       ul {
          margin: 0;
+         padding-top: 0.3rem;
          
       }
 
@@ -38,6 +40,9 @@
          display: inline;
          list-style: none;
          cursor: pointer;
+      }
+      li:hover{
+         background-color: #004B39;
       }
    }
 

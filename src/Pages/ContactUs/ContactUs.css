@@ -1,0 +1,11 @@
+.contactus{
+   background-color: rgb(0, 64, 43);
+}
+.contact_details, .div_contact,.guide-section, .address-section {
+   padding: 1rem;
+   background-color: aquamarine;
+   color: black;
+   h2{
+      color: black;
+   }
+}

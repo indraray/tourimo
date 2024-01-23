@@ -1,0 +1,23 @@
+/* color: #012A0A; */
+/* color: #004B39; */
+/* color: #006D71; */
+/* color: #008DAE; */
+/* color: #4AABE6; */
+/* color: #A9C4FF; */
+
+.blogs {
+  background-color: #004B39;
+
+  .posts{
+    background-color:   #57b6f1;
+    color: #A9C4FF;
+
+    .div_display_one{
+      padding: 1rem;
+    }
+
+    .div_input{
+      padding: 1rem;
+    }
+  }
+}

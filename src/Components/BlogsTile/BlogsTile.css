@@ -1,0 +1,17 @@
+.div_post{
+   border-bottom: 2px solid black;
+   padding: 1rem;
+
+   .engagement {
+      display: grid;
+      grid-template-columns: repeat(1, 0.02fr);
+      grid-template-rows: repeat(1, 0.02fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      }
+      
+      .div1 {
+         padding-top: 1rem;
+          grid-area: 1 / 1 / 2 / 2; }
+      .div2 { grid-area: 1 / 2 / 2 / 3; }
+}

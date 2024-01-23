@@ -10,15 +10,16 @@ export default function Navbar() {
       </div>
       <div className="nav_links">
         <ul>
-        <li ><Link  to="/" > HOME</Link></li>
-        <li ><Link  to="/" > TRAVEL</Link></li>
-        <li ><Link  to="/" > GALLERY</Link></li>
-        <li ><Link  to="/" > ABOUT US</Link></li>
-        <li ><Link  to="/" > CONTACT US</Link></li>
+        <li ><Link  to="/" > Home</Link></li>
+        <li ><Link  to="/travel" >Book Tour</Link></li>
+        <li ><Link  to="/blogs" > Blogs</Link></li>
+        <li ><Link  to="/gallery" > Gallery</Link></li>
+        <li ><Link  to="/aboutus" > About Us</Link></li>
+        <li ><Link  to="/contactus" > Contact Us</Link></li>
         </ul>
       </div>
       <div className="nav_media">
-        <Link  to="/login"> <span className="material-symbols-outlined">send</span></Link>
+        <Link  to="/postblog"> <span className="material-symbols-outlined">send</span></Link>
         <Link  to="/login"> <span className="material-symbols-outlined">login</span></Link>
         
       </div>

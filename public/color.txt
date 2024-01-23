@@ -1,0 +1,6 @@
+color: #012A0A;
+color: #004B39;
+color: #006D71;
+color: #008DAE;
+color: #4AABE6;
+color: #A9C4FF;
